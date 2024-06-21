@@ -5,7 +5,7 @@
   const data = [
     {
       daynum: '1',
-      title: 'June 26th',
+      title: '',
       activities: [
         {
           name: 'PD Bootcamp Welcome',
@@ -159,7 +159,7 @@
     },
     {
       daynum: '2',
-      title: 'June 27th',
+      title: '',
       activities: [
         {
           name: 'Team Building',
@@ -283,9 +283,9 @@
           <span class="dayofWeek"
             >&nbsp;
             {#if day.daynum === '1'}
-              Thurs,
+              Wednesday
             {:else if day.daynum === '2'}
-              Fri,
+              Thursday
             {/if}
           </span>
           <span class="titleFix">&nbsp;{day.title}</span>
