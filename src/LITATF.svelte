@@ -177,6 +177,11 @@
               linkURL:
                 'https://docs.google.com/presentation/d/1u8n9CBIhl9c0WkW8Hk1dnhyPVJhj9jV64TGam0VQbi0/edit?usp=sharing',
             },
+            {
+              displayText: 'A Guide to Generative AI in the Summer Intensive',
+              linkURL:
+                'https://docs.google.com/presentation/d/1prRJ8447UKcF6LeEkAL2-9kLvrL1fdc5kybQmFryGjs/edit?usp=sharing',
+            },
           ],
         },
         { name: 'BREAK', time: '10:45AM - 11:00AM', duration: '15', actType: 'misc', links: [] },
