@@ -1,8 +1,8 @@
 <script lang="ts">
+  import anime from 'animejs';
   import asterik from './assets/new_logo_small.png';
   import LITATF from './LITATF.svelte';
   import SIC from './SIC.svelte';
-  import anime from 'animejs';
 
   let LITATFSchedule: HTMLDivElement;
   let SICSchedule: HTMLDivElement;
@@ -13,9 +13,7 @@
     !ele.classList.contains(className) ? ele.classList.toggle(className) : null;
 
   const animateLITATF = () => {
-    const allListItems = document.querySelectorAll(
-      '#LITATFCont > ul.collapsible > li'
-    );
+    const allListItems = document.querySelectorAll('#LITATFCont > ul.collapsible > li');
     anime({
       targets: allListItems,
       translateY: [250, 0],
@@ -27,9 +25,7 @@
   };
 
   const animateSIC = () => {
-    const allListItems = document.querySelectorAll(
-      '#SICCont > ul.collapsible > li'
-    );
+    const allListItems = document.querySelectorAll('#SICCont > ul.collapsible > li');
     anime({
       targets: allListItems,
       translateY: [250, 0],
@@ -69,8 +65,7 @@
       if (!LITATFBtn.classList.contains('chosen')) {
         LITATFBtn.classList.toggle('chosen');
       }
-      if (SICBtn.classList.contains('chosen'))
-        SICBtn.classList.toggle('chosen');
+      if (SICBtn.classList.contains('chosen')) SICBtn.classList.toggle('chosen');
     }
   };
 
@@ -83,8 +78,7 @@
       if (!SICBtn.classList.contains('chosen')) {
         SICBtn.classList.toggle('chosen');
       }
-      if (LITATFBtn.classList.contains('chosen'))
-        LITATFBtn.classList.toggle('chosen');
+      if (LITATFBtn.classList.contains('chosen')) LITATFBtn.classList.toggle('chosen');
     }
   };
 
@@ -111,14 +105,14 @@
       on:click={LITATFClicked}
       bind:this={LITATFBtn}
     >
-      LI/LTA/TA Schedule
+      LI / LTA / TA
     </button>
     <button
       class="waves-effect waves-light btn btn-large schedule-btn"
       on:click={SICClicked}
       bind:this={SICBtn}
     >
-      SIC schedule
+      SIC
     </button>
   </div>
   <ul class="collapsible">
@@ -132,8 +126,7 @@
   <button
     id="scrollToTop"
     class="waves-effect waves-light btn btn-medium"
-    on:click={() =>
-      document.getElementById('anchor').scrollIntoView({ behavior: 'smooth' })}
+    on:click={() => document.getElementById('anchor').scrollIntoView({ behavior: 'smooth' })}
   >
     back to top
   </button>
